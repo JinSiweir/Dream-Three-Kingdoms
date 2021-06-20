@@ -14,3 +14,4 @@ rm ./.git/index.lock
 # 二 后台管理
 
 1. 基于 Element UI-PLUS 的后台管理基础界面搭建
+   Vue cli@4 不支持 Element 所以安装 Element UI-PLUS
