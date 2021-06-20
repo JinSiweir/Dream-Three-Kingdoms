@@ -13,4 +13,4 @@ rm ./.git/index.lock
 
 # 二 后台管理
 
-1. 基于 Element UI 的后台管理基础界面搭建
+1. 基于 Element UI-PLUS 的后台管理基础界面搭建
