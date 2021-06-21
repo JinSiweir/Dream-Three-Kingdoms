@@ -1,7 +1,7 @@
 <template>
   <div class="create">
     <h1>新建分类</h1>
-    <!--  native 原生表单  prevent 阻止事件-->
+    <!--    prevent 阻止事件-->
     <el-form label-width="120px" @submit.prevent="save">
       <el-form-item label="名称">
         <el-input v-model="model.name"></el-input>
@@ -18,8 +18,15 @@ export default {
     return { model: {} };
   },
   methods: {
-    save() {
-      // this.$http.post();
+    async save() {
+      console.log("success");
+      // const res = await this.$http.post("categories", this.model);
+      // console.log(res);
+      // this.$router.push("/categories/list");
+      // this.$message({
+      //   type: "success",
+      //   message: "保存成功",
+      // });
     },
   },
 };
