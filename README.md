@@ -17,3 +17,6 @@ rm ./.git/index.lock
    Vue cli@4 不支持 Element 所以安装 Element UI-PLUS  
    vue add element-plus
    使用 Vue-router
+
+1. 分类创建
+1. 分类列表
