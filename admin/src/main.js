@@ -10,5 +10,4 @@ installElementPlus(app);
 app.use(router);
 // ↓ 用来代替 Vue.prototype.$http
 app.config.globalProperties.$http = http;
-
 app.mount("#app");

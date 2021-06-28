@@ -44,4 +44,13 @@ module.exports = (app) => {
     },
     router
   );
+  //图片数据上传
+  const multer = require("multer");
+  //multer中间件  处理文件的上传
+  const upload = multer({ dest: __dirname + "/../../uploads" });
+  app.post("/admin/api/upload", upload.single("file"), async (req, res) => {
+    const file = req.file;
+    file.url = `http://localhost:3000/uploads/${file.filename}`;
+    res.send(file);
+  });
 };
