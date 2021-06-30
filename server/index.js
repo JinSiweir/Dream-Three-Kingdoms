@@ -4,7 +4,7 @@ const app = express();
 
 //添加 跨域和 json
 app.use(require("cors")());
-app.use(express.json());
+app.use(express.json({ limit: "1000kb" }));
 //静态路由托管
 app.use("/uploads", express.static(__dirname + "/uploads"));
 

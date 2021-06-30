@@ -13,15 +13,22 @@ rm ./.git/index.lock
 
 # 二 后台管理
 
-1. 基于 Element UI-PLUS 的后台管理基础界面搭建
-   Vue cli@4 不支持 Element 所以安装 Element UI-PLUS  
-   vue add element-plus
-   使用 Vue-router
+基于 Element UI-PLUS 的后台管理基础界面搭建
+Vue cli@4 不支持 Element 所以安装 Element UI-PLUS  
+vue add element-plus
+使用 Vue-router
 
 1. 分类创建
-1. 分类删除
-1. 分类修改
-1. 分类列表
-1. 次级分类
+2. 分类删除
+3. 分类修改
+4. 分类列表
+5. 次级分类
 
-**通用 CRUD 接口**
+6. **通用 CRUD 接口**
+7. 装备管理
+8. 图片上传(使用 multer 中间件)
+9. 英雄管理
+10. 编辑英雄
+11. 技能编辑
+12. 文章管理
+13. 富文本编辑器(vue3-editor)
