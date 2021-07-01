@@ -33,3 +33,6 @@ vue add element-plus
 12. 文章管理
 13. 富文本编辑器(vue3-editor)
 14. 广告位
+
+\*\* 权限部分
+. 管理员账号管理(bcrypt)
