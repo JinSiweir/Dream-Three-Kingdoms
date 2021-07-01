@@ -32,3 +32,4 @@ vue add element-plus
 11. 技能编辑
 12. 文章管理
 13. 富文本编辑器(vue3-editor)
+14. 广告位

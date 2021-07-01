@@ -4,6 +4,8 @@ import installElementPlus from "./plugins/element";
 import router from "./router";
 import http from "./http";
 
+import "./style.css";
+
 const app = createApp(App);
 installElementPlus(app);
 
