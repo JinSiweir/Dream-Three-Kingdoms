@@ -2,6 +2,8 @@ const express = require("express");
 
 const app = express();
 
+//设置screct属性 用来生成token
+app.set("secret", "1368953");
 //添加 跨域和 json
 app.use(require("cors")());
 app.use(express.json({ limit: "1000kb" }));

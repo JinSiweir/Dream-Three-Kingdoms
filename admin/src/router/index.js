@@ -1,6 +1,8 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 // import Home from "../views/Home.vue";
 import Main from "../views/Main.vue";
+import Login from "../views/Login.vue";
+
 import CategoryEdit from "../views/CategoryEdit.vue";
 import CategoryList from "../views/CategoryList.vue";
 
@@ -20,6 +22,7 @@ import AdminUserEdit from "../views/AdminUserEdit.vue";
 import AdminUserList from "../views/AdminUserList.vue";
 
 const routes = [
+  { path: "/login", name: "login", component: Login, meta: { isPbulic: true } },
   {
     path: "/",
     name: "Main",
@@ -55,6 +58,13 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
+});
+
+//给登录路由加一个 meta: { isPbulic: true }  然后使用导航守卫来完善登录情况限制
+router.beforeEach((to, from, next) => {
+  if (!to.meta.isPbulic && !localStorage.token) {
+    return next("/login");
+  } else next();
 });
 
 export default router;

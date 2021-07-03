@@ -36,3 +36,6 @@ vue add element-plus
 
 \*\* 权限部分
 . 管理员账号管理(bcrypt)
+. 登录界面
+. 登录接口(jsonwebtoken)
+. 服务端登录校验

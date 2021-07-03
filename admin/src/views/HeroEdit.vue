@@ -10,8 +10,9 @@
           </el-form-item>
           <el-form-item label="头像">
             <el-upload
+              :action="uploadUrl"
+              :headers="getAuthHeaders()"
               class="avatar-uploader"
-              :action="this.$http.defaults.baseURL + '/upload'"
               :show-file-list="false"
               :on-success="afterUpload"
             >
@@ -110,8 +111,9 @@
               </el-form-item>
               <el-form-item label="图标">
                 <el-upload
+                  :action="uploadUrl"
+                  :headers="getAuthHeaders()"
                   class="avatar-uploader"
-                  :action="this.$http.defaults.baseURL + '/upload'"
                   :show-file-list="false"
                   :on-success="(res) => (item.icon = res.url)"
                 >
