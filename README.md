@@ -25,6 +25,7 @@ vue add element-plus
 5. 次级分类
 
 6. **通用 CRUD 接口**
+
 7. 装备管理
 8. 图片上传(使用 multer 中间件)
 9. 英雄管理
@@ -34,8 +35,11 @@ vue add element-plus
 13. 富文本编辑器(vue3-editor)
 14. 广告位
 
-\*\* 权限部分
-. 管理员账号管理(bcrypt)
-. 登录界面
-. 登录接口(jsonwebtoken)
-. 服务端登录校验
+**权限部分**
+
+1. 管理员账号管理(bcrypt)
+2. 登录界面
+3. 登录接口(jsonwebtoken)
+4. 服务端登录校验
+
+# 三 前端界面
