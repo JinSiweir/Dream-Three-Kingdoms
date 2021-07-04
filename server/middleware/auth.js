@@ -1,3 +1,4 @@
+//登录状态中间件
 module.exports = (options) => {
   const jwt = require("jsonwebtoken"); //登录状态校验
   const assert = require("http-assert"); //捕获错误状态

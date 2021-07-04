@@ -55,6 +55,7 @@ module.exports = (app) => {
     resourceMiddleware(), //导入数据模型
     router
   );
+
   //图片数据上传
   //multer中间件  处理文件的上传
   const upload = multer({ dest: __dirname + "/../../uploads" });
@@ -62,7 +63,7 @@ module.exports = (app) => {
     "/admin/api/upload",
     authMiddleware(),
     upload.single("file"),
-    async (req, res) => {
+    (req, res) => {
       const file = req.file;
       file.url = `http://localhost:3000/uploads/${file.filename}`;
       res.send(file);
@@ -85,7 +86,7 @@ module.exports = (app) => {
   });
   //错误处理
   app.use(async (err, req, res, next) => {
-    res.status(err.statusCode || 500).send({
+    await res.status(err.statusCode || 500).send({
       message: err.message,
     });
   });

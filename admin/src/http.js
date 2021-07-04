@@ -22,7 +22,7 @@ http.interceptors.request.use(
   }
 );
 
-//回应
+//响应
 http.interceptors.response.use(
   (res) => {
     return res;

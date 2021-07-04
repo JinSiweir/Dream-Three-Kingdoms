@@ -1,3 +1,4 @@
+// 通用CURD 中间件
 module.exports = (options) => {
   return async (req, res, next) => {
     //modelName 使用inflation 对resource进行转换
