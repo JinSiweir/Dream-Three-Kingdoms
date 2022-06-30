@@ -1,17 +1,17 @@
 # Dream-Three-Kingdoms
 
-一个全栈梦三国游戏官网项目 开发进度 50%
+一个稀碎项目 开发进度 0.5%
 
 File exists. 可以尝试下面 删除 lock 文件
 rm ./.git/index.lock
 
-# 一、项目搭建初始化
+## 一、项目搭建初始化
 
 1. 后台项目
 2. 服务端项目
 3. 前端项目
 
-# 二 后台管理
+## 二 后台管理
 
 基于 Element UI-PLUS 的后台管理基础界面搭建
 Vue cli@4 不支持 Element 所以安装 Element UI-PLUS  
