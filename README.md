@@ -11,7 +11,7 @@ rm ./.git/index.lock
 2. 服务端项目
 3. 前端项目
 
-## 二 后台管理
+## 二、后台管理
 
 基于 Element UI-PLUS 的后台管理基础界面搭建
 Vue cli@4 不支持 Element 所以安装 Element UI-PLUS  
@@ -42,7 +42,7 @@ vue add element-plus
 3. 登录接口(jsonwebtoken)
 4. 服务端登录校验
 
-## 三 移动端界面
+## 三、移动端界面
 
 1. "工具样式"概念 SASS(SCSS)
 2. 重置样式
